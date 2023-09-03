@@ -25,21 +25,21 @@ enableGitInfo = true
 
 [menu]
 # [[menu.before]]
-[[menu.after]]
-  name = "Github"
-  url = "https://github.com/vrtmrz"
-  weight = 10
+# [[menu.after]]
+#   name = "Github"
+#   url = "https://github.com/vrtmrz"
+#   weight = 10
 
-[[menu.after]]
-  name = "Twitter"
-  url = "https://twitter.com/vorotamoroz"
-  weight = 20
+# [[menu.after]]
+#   name = "Twitter"
+#   url = "https://twitter.com/vorotamoroz"
+#   weight = 20
 
 
-[[menu.after]]
-  name = "Fediverse(Misskey)"
-  url = "https://misskey.io/@vrtmrz"
-  weight = 20
+# [[menu.after]]
+#   name = "Fediverse(Misskey)"
+#   url = "https://misskey.io/@vrtmrz"
+#   weight = 20
 
 
 [params]
