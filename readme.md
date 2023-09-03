@@ -35,6 +35,7 @@ LSSP_HUGO_TITLE=LiveSync Subscribe Pubslish Test
 
 # You can leave them as default.
 LSSP_SUBSCRIBEDIR=blogdir/
+LSSP_PUBLISH_PORT=8080
 LSSP_LOCALDIR=/app/content/sitesrc/
 LSSP_SCRIPT_CMD=/app/build.sh
 LSSP_SCRIPT_ARGS=""
