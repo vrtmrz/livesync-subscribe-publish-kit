@@ -18,7 +18,6 @@ Then, your site would be hosted at localhost:8080
 ## How to host
 Depends on your platform. To be written for about some major PaaSs.
 
-
 ## Environment variables
 
 ```.env
@@ -42,3 +41,5 @@ LSSP_SCRIPT_ARGS=""
 LSSP_STATDIR=/app/content/sitesrc/
 LSSP_CONFIG_PATH=/app/subscriber/config.jsonc
 ```
+
+Licensed as MIT.
