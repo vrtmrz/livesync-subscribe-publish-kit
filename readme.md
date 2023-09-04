@@ -41,6 +41,10 @@ LSSP_SCRIPT_CMD=/app/build.sh
 LSSP_SCRIPT_ARGS=""
 LSSP_STATDIR=/app/content/sitesrc/
 LSSP_CONFIG_PATH=/app/subscriber/config.jsonc
+LSSP_KEYFILE=flush.md
+LSSP_APIPATH=
 ```
+
+Note: If you want to use API update mode, you have to set empty to `LSSP_KEYFILE` and any of your favourite paths to `LSSP_APIPATH`.
 
 Licensed as MIT.
