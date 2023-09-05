@@ -9,7 +9,7 @@ WORKDIR /app
 RUN curl -L -O https://github.com/gohugoio/hugo/releases/download/v0.118.2/hugo_extended_0.118.2_linux-arm64.tar.gz 
 RUN tar fx hugo_extended_0.118.2_linux-arm64.tar.gz
 
-RUN git clone --recursive https://github.com/vrtmrz/hugoconfig-livesync-publisher -b 0.0.1 hugosite
+RUN git clone --recursive https://github.com/vrtmrz/hugoconfig-livesync-publisher -b 0.0.2 hugosite
 RUN git clone --recursive https://github.com/vrtmrz/livesync-subscribe-publish -b 0.0.2 subscriber
 
 # ADD hugosite ./hugosite
