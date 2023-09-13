@@ -6,8 +6,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 RUN /root/.cargo/bin/cargo install obsidian-export
 WORKDIR /app
-RUN curl -L -O https://github.com/gohugoio/hugo/releases/download/v0.118.2/hugo_extended_0.118.2_linux-arm64.tar.gz 
-RUN tar fx hugo_extended_0.118.2_linux-arm64.tar.gz
+ARG TARGETARCH
+RUN curl -L -o hugo.tar.gz -O "https://github.com/gohugoio/hugo/releases/download/v0.118.2/hugo_extended_0.118.2_linux-$TARGETARCH.tar.gz" 
+RUN tar fx hugo.tar.gz
 
 RUN git clone --recursive https://github.com/vrtmrz/hugoconfig-livesync-publisher -b 0.0.2 hugosite
 RUN git clone --recursive https://github.com/vrtmrz/livesync-subscribe-publish -b 0.0.2 subscriber

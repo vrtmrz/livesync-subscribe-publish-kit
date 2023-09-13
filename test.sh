@@ -1,1 +1,1 @@
-docker build -t lsspk . && docker run --env-file .env -p:8080:8080 -it -v ${PWD}/testdat:/app/content -t lsspk
+docker buildx build --platform linux/amd64,linux/arm64 -t lsspk . && docker run --env-file .env -p:8080:8080 -it -v ${PWD}/testdat:/app/content -t lsspk
