@@ -13,7 +13,8 @@ Then, your site would be hosted at localhost:8080
 
 ## How to host
 ### Deploy to fly.io
-**Note:** `nrt` is a region in Japan. Please choose a location which the same or near your vault.
+**Note:** `nrt` is a region in Japan. Please choose a location which the same or near your vault.  
+**Note2:** We can try it directly from Google Colab by this [Gist](https://gist.github.com/vrtmrz/f4bba6cdc4216af5cacce3c945b2fb77).
 ```sh
 # 1. Generate a machine
 $ fly launch  --auto-confirm --generate-name --detach --no-deploy --region nrt
