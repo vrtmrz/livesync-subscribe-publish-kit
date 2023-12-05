@@ -1,4 +1,4 @@
-FROM lukechannings/deno:v1.36.3
+FROM lukechannings/deno:v1.38.3
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl gcc ca-certificates libc6-dev git \
     && apt-get clean \
@@ -11,7 +11,7 @@ RUN curl -L -o hugo.tar.gz -O "https://github.com/gohugoio/hugo/releases/downloa
 RUN tar fx hugo.tar.gz
 
 RUN git clone --recursive https://github.com/vrtmrz/hugoconfig-livesync-publisher -b 0.0.2 hugosite
-RUN git clone --recursive https://github.com/vrtmrz/livesync-subscribe-publish -b 0.0.2 subscriber
+RUN git clone --recursive https://github.com/vrtmrz/livesync-subscribe-publish -b 0.0.4 subscriber
 
 # ADD hugosite ./hugosite
 ADD hugo.template.toml ./hugo.template.toml
